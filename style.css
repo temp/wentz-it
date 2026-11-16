@@ -69,3 +69,7 @@ footer a{color:var(--muted)}
 .legal .note{color:var(--muted);font-size:14px}
 ul.plain li span.tags{display:flex}
 ul.plain li span.tag{color:var(--accent);font-size:13px}
+ul.projects li{padding:20px 0}
+ul.projects li:first-child{padding-top:4px}
+ul.projects li strong{margin-bottom:4px}
+ul.projects li span.tags{margin-top:12px}
