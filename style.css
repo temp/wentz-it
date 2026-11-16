@@ -67,3 +67,5 @@ footer a{color:var(--muted)}
 .legal h2{font-size:18px;margin:28px 0 8px}
 .legal p,.legal li{color:var(--ink)}
 .legal .note{color:var(--muted);font-size:14px}
+ul.plain li span.tags{display:flex}
+ul.plain li span.tag{color:var(--accent);font-size:13px}
