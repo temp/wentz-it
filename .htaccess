@@ -1,0 +1,2 @@
+# Git-Verzeichnis nicht ausliefern
+RedirectMatch 404 /\.git
