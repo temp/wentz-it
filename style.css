@@ -1,11 +1,11 @@
 :root{
   --bg:#f7f6f3; --surface:#ffffff; --ink:#1d2430; --muted:#5f6979; --line:#e3e2dc;
-  --accent:#0f5c63; --accent-soft:#e3efef;
+  --accent:#0f5c63; --accent-soft:#e3efef; --on-accent:#ffffff;
   --maxw:760px;
 }
 @media (prefers-color-scheme: dark){
   :root{ --bg:#14181d; --surface:#1b2027; --ink:#e7eaee; --muted:#9aa4b1; --line:#2a313a;
-         --accent:#5fb3ba; --accent-soft:#1f3337; }
+         --accent:#5fb3ba; --accent-soft:#1f3337; --on-accent:#0b1f22; }
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -24,7 +24,7 @@ header.top{display:flex;justify-content:space-between;align-items:center;padding
 .langswitch{display:flex;gap:2px;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
 .langswitch button{border:0;background:transparent;color:var(--muted);font:600 13px/1 inherit;
   padding:7px 11px;border-radius:999px;cursor:pointer}
-.langswitch button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.langswitch button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
 
 .hero{padding:48px 0 36px}
 .hero h1{font-size:clamp(34px,7vw,52px);line-height:1.05;letter-spacing:-.03em;margin:0 0 12px}
@@ -34,7 +34,7 @@ header.top{display:flex;justify-content:space-between;align-items:center;padding
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;
   font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line);
   background:var(--surface);color:var(--ink)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 .btn:hover{border-color:var(--accent)}
 
 section{padding:34px 0;border-top:1px solid var(--line)}
@@ -52,7 +52,7 @@ ul.plain li span{color:var(--muted);font-size:15px}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .tag{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:4px 11px;font-size:13px;font-weight:600}
 a.tag{text-decoration:none}
-a.tag:hover{background:var(--accent);color:#fff}
+a.tag:hover{background:var(--accent);color:var(--on-accent)}
 ul.plain li strong a{color:var(--ink);text-decoration:none}
 ul.plain li strong a:hover{color:var(--accent);text-decoration:underline}
 
