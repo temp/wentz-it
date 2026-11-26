@@ -73,3 +73,5 @@ ul.projects li{padding:20px 0}
 ul.projects li:first-child{padding-top:4px}
 ul.projects li strong{margin-bottom:4px}
 ul.projects li span.tags{margin-top:12px}
+ul.career li .when{display:block;font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.02em;margin-bottom:2px}
+ul.career li .when span, ul.plain li strong span{color:inherit;font-size:inherit}
