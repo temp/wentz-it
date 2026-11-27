@@ -75,3 +75,7 @@ ul.projects li strong{margin-bottom:4px}
 ul.projects li span.tags{margin-top:12px}
 ul.career li .when{display:block;font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.02em;margin-bottom:2px}
 ul.career li .when span, ul.plain li strong span{color:inherit;font-size:inherit}
+.hero-head{display:flex;align-items:center;gap:24px;margin-bottom:22px}
+.hero-head .role{margin:0}
+.portrait{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 3px var(--bg,#fff),0 0 0 4px rgba(0,0,0,.08)}
+@media (max-width:520px){.hero-head{gap:16px}.portrait{width:72px;height:72px}}
